@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+group 'com.github.amirashad'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile "org.spockframework:spock-core:2.0-M4-groovy-3.0"
+}
+
+test {
+    useJUnitPlatform()
+}
